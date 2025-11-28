@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bannière LinkedIn - SuccessAlgo</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Consolas', 'Monaco', 'Courier New', monospace;
+        }
+        
+        body {
+            background-color: #1e1e1e;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .banner {
+            width: 1128px;
+            height: 300px;
+            background: #1e1e1e;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+            display: flex;
+            position: relative;
+            border: 1px solid #333;
+        }
+        
+        .code-section {
+            flex: 1.2;
+            padding: 25px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            background: #1e1e1e;
+        }
+        
+        .code-container {
+            background: #1e1e1e;
+            border-radius: 6px;
+            padding: 20px;
+            border: 1px solid #333;
+        }
+        
+        .code-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #333;
+        }
+        
+        .code-dots {
+            display: flex;
+            gap: 8px;
+            margin-right: 15px;
+        }
+        
+        .dot {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+        }
+        
+        .dot-red { background: #ff5f56; }
+        .dot-yellow { background: #ffbd2e; }
+        .dot-green { background: #27ca3f; }
+        
+        .code-title {
+            color: #cccccc;
+            font-size: 14px;
+            font-weight: 500;
+        }
+        
+        .code-body {
+            color: #d4d4d4;
+            line-height: 1.5;
+            font-size: 15px;
+        }
+        
+        .keyword {
+            color: #569cd6;
+        }
+        
+        .class-name {
+            color: #4ec9b0;
+        }
+        
+        .method {
+            color: #dcdcaa;
+        }
+        
+        .string {
+            color: #ce9178;
+        }
+        
+        .comment {
+            color: #6a9955;
+        }
+        
+        .operator {
+            color: #d4d4d4;
+        }
+        
+        .bracket {
+            color: #ffd700;
+        }
+        
+        .decoration-section {
+            flex: 0.8;
+            position: relative;
+            overflow: hidden;
+            background: #1e1e1e;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        
+        .terminal {
+            background: #0c0c0c;
+            border-radius: 6px;
+            padding: 15px;
+            width: 90%;
+            border: 1px solid #333;
+            margin-bottom: 20px;
+        }
+        
+        .terminal-header {
+            color: #cccccc;
+            font-size: 12px;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        
+        .terminal-body {
+            color: #0dbc79;
+            font-size: 13px;
+            line-height: 1.4;
+        }
+        
+        .terminal-prompt {
+            color: #0dbc79;
+        }
+        
+        .terminal-command {
+            color: #ffffff;
+        }
+        
+        .stats {
+            display: flex;
+            gap: 15px;
+            margin-top: 15px;
+        }
+        
+        .stat {
+            background: #252526;
+            padding: 8px 12px;
+            border-radius: 4px;
+            color: #cccccc;
+            font-size: 12px;
+            border: 1px solid #333;
+        }
+        
+        .floating-elements {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+        }
+        
+        .floating-element {
+            position: absolute;
+            font-size: 14px;
+            color: #569cd6;
+            opacity: 0.7;
+            animation: float 15s infinite linear;
+        }
+        
+        @keyframes float {
+            0% {
+                transform: translateY(0) translateX(0);
+                opacity: 0;
+            }
+            10% {
+                opacity: 0.7;
+            }
+            90% {
+                opacity: 0.7;
+            }
+            100% {
+                transform: translateY(-100px) translateX(50px);
+                opacity: 0;
+            }
+        }
+        
+        .watermark {
+            position: absolute;
+            bottom: 15px;
+            right: 15px;
+            color: #3c3c3c;
+            font-size: 12px;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <div class="banner">
+        <div class="code-section">
+            <div class="code-container">
+                <div class="code-header">
+                    <div class="code-dots">
+                        <div class="dot dot-red"></div>
+                        <div class="dot dot-yellow"></div>
+                        <div class="dot dot-green"></div>
+                    </div>
+                    <div class="code-title">SuccessAlgo.java</div>
+                </div>
+                <div class="code-body">
+                    <div><span class="keyword">public class</span> <span class="class-name">SuccessAlgo</span> <span class="bracket">{</span></div>
+                    <div>&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">public static void</span> <span class="method">main</span>(String[] args) <span class="bracket">{</span></div>
+                    <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">while</span> (nosuccess) <span class="bracket">{</span></div>
+                    <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="method">improve</span>();</div>
+                    <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">if</span> (!alive)</div>
+                    <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">break</span>;</div>
+                    <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="bracket">}</span></div>
+                    <div>&nbsp;&nbsp;&nbsp;&nbsp;<span class="bracket">}</span></div>
+                    <div>&nbsp;</div>
+                    <div>&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">public static void</span> <span class="method">improve</span>() <span class="bracket">{</span></div>
+                    <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;success = resilience <span class="operator">&&</span> focus;</div>
+                    <div>&nbsp;&nbsp;&nbsp;&nbsp;<span class="bracket">}</span></div>
+                    <div><span class="bracket">}</span></div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="decoration-section">
+            <div class="terminal">
+                <div class="terminal-header">
+                    <span>Terminal</span>
+                </div>
+                <div class="terminal-body">
+                    <div><span class="terminal-prompt">$</span> <span class="terminal-command">java SuccessAlgo</span></div>
+                    <div>> Démarrage de l'algorithme de succès...</div>
+                    <div>> Résilience: ✓</div>
+                    <div>> Focus: ✓</div>
+                    <div>> Amélioration en cours...</div>
+                </div>
+            </div>
+            
+            <div class="stats">
+                <div class="stat">Lines: 14</div>
+                <div class="stat">Java</div>
+                <div class="stat">UTF-8</div>
+            </div>
+            
+            <div class="floating-elements">
+                <div class="floating-element" style="top: 20%; left: 10%; animation-delay: 0s;">{ }</div>
+                <div class="floating-element" style="top: 40%; left: 80%; animation-delay: 2s;">public</div>
+                <div class="floating-element" style="top: 70%; left: 15%; animation-delay: 4s;">static</div>
+                <div class="floating-element" style="top: 10%; left: 60%; animation-delay: 6s;">void</div>
+                <div class="floating-element" style="top: 60%; left: 70%; animation-delay: 8s;">class</div>
+            </div>
+            
+            <div class="watermark">// SuccessAlgo.java</div>
+        </div>
+    </div>
+</body>
+</html>
